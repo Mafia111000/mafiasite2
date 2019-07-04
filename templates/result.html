@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+			MAFIA 
+		</div>
+		<h2>IMAGE CLASSIFIER</h2>
+		
+	</div>
+	</header>
+	<img src="../uploads/"{{fliename}}, alt="oops pic can't be loaded..">
+	<p style="color:blue;font-size:20;text-align: center;"><b><h1>ItemsPredicted from the uploaded image:</h1></b></p>
+	<div class="results">
+
+	
+		
+	
+	<ol>
+		<li><h2 style="color:chartreuse;">{{prediction[0][1]}}</h2></li>
+	
+	<li><h2 style="color:rgb(157, 255, 0);">{{prediction[1][1]}}</h2></li>
+<li><h2 style="color:rgb(255, 208, 0);">{{prediction[2][1]}}</h2></li>
+<li><h2 style="color:rgb(255, 187, 0);">{{prediction[3][1]}}</h2></li>
+<li><h2 style="color:rgb(255, 115, 0);">{{prediction[3][1]}}</h2></li>
+<li>	<h2 style="color:red;">{{prediction[3][1]}}</h2></li>
+</ol>
+
+	</div>
+
+</body>
+</html>
